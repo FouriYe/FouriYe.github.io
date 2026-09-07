@@ -6,9 +6,32 @@
   <meta name="description" content="Zihan Ye is an AI researcher working on trustworthy zero-shot learning, including interpretable, efficient, and robust zero-shot learning.">
   <meta name="theme-color" content="#f2efe7">
   <title>Zihan Ye — Trustworthy Zero-Shot Learning</title>
+  <script>
+    (() => {
+      const refreshKey = "_fresh";
+      const url = new URL(window.location.href);
+      const existingToken = url.searchParams.get(refreshKey);
+
+      if (!existingToken) {
+        url.searchParams.set(refreshKey, Date.now().toString());
+        window.location.replace(url.toString());
+        return;
+      }
+
+      window.__siteRefreshToken = existingToken;
+      window.addEventListener("DOMContentLoaded", () => {
+        const cleanUrl = new URL(window.location.href);
+        cleanUrl.searchParams.delete(refreshKey);
+        window.history.replaceState(null, "", cleanUrl.toString());
+      }, { once: true });
+    })();
+  </script>
   <script>document.documentElement.classList.add("js")</script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link id="site-styles" rel="stylesheet">
+  <script>
+    document.getElementById("site-styles").href = `styles.css?_fresh=${encodeURIComponent(window.__siteRefreshToken || Date.now())}`;
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -68,7 +91,7 @@
           <span data-i18n="heroTitleLead">Trustworthy</span>
           <em data-i18n="heroTitleFocus">Zero-Shot Learning</em>
         </h1>
-        <p class="hero-intro reveal reveal-delay-2" data-i18n="heroIntro">I build learning systems that can recognize the unseen — and do so with evidence, efficiency, and resilience.</p>
+        <p class="hero-intro reveal reveal-delay-2" data-i18n-html="heroIntro">I am currently an Assistant Researcher at the University of Chinese Academy of Sciences (UCAS), working with Prof. <a href="https://scholar.google.com/citations?user=z84rLjoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Ling Shao</a>. I received my Ph.D. degree from the Premi Lab of the University of Liverpool in 2025, under the supervision of Prof. <a href="https://scholar.google.com/citations?user=3l5B0joAAAAJ&amp;hl=en" target="_blank" rel="noopener">Kaizhu Huang</a>. During my undergraduate studies, I worked under the guidance of Prof. <a href="https://scholar.google.com/citations?user=n3VIi58AAAAJ&amp;hl=en" target="_blank" rel="noopener">Fuyuan Hu</a>. My research centers on <strong>trustworthy zero-shot learning</strong>, with a particular focus on <strong>interpretable zero-shot learning</strong>, <strong>efficient zero-shot learning</strong>, and <strong>robust zero-shot learning</strong>. I aim to develop learning systems that can recognize unseen concepts in a transparent, data-efficient, and dependable manner.</p>
 
         <div class="hero-actions reveal reveal-delay-3">
           <a class="button button-primary" href="#research">
@@ -152,14 +175,11 @@
           </ul>
         </article>
       </div>
-    </section>
-
-    <section class="section featured-work">
-      <div class="section-label reveal">
-        <span>02</span>
-        <p data-i18n="featuredLabel">Featured research</p>
-      </div>
-      <div class="featured-grid">
+      <div class="featured-work">
+        <div class="featured-heading reveal">
+          <p data-i18n="featuredLabel">Featured research</p>
+        </div>
+        <div class="featured-grid">
         <article class="feature reveal">
           <div class="feature-meta"><span>ICML · 2026</span><span class="topic-interpretable" data-i18n="interpretBadge">Interpretable ZSL</span></div>
           <h2>Segment Anything</h2>
@@ -184,12 +204,13 @@
           <p data-i18n="adversarialBody">An empirical study of adversarial vulnerabilities at both class and concept levels, clarifying where zero-shot systems fail under attack.</p>
           <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:dhFuZR0502QC" target="_blank" rel="noopener"><span data-i18n="viewOnScholar">View on Scholar</span><span aria-hidden="true">↗</span></a>
         </article>
+        </div>
       </div>
     </section>
 
     <section class="section publications" id="publications">
       <div class="section-label reveal">
-        <span>03</span>
+        <span>02</span>
         <p data-i18n="publicationsLabel">Publications</p>
       </div>
       <div class="publications-heading reveal">
@@ -313,7 +334,7 @@
 
     <section class="section journey" id="experience">
       <div class="section-label reveal">
-        <span>04</span>
+        <span>03</span>
         <p data-i18n="journeyLabel">Academic journey</p>
       </div>
       <div class="journey-layout">
@@ -351,7 +372,7 @@
 
     <section class="section service" id="service">
       <div class="section-label reveal">
-        <span>05</span>
+        <span>04</span>
         <p data-i18n="serviceLabel">Service &amp; funding</p>
       </div>
       <div class="service-layout">
@@ -433,6 +454,11 @@
     <a href="#top" data-i18n="backToTop">Back to top ↑</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const siteScript = document.createElement("script");
+    siteScript.src = `script.js?_fresh=${encodeURIComponent(window.__siteRefreshToken || Date.now())}`;
+    siteScript.async = false;
+    document.body.appendChild(siteScript);
+  </script>
 </body>
 </html>

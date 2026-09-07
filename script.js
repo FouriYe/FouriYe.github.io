@@ -2,7 +2,7 @@ const translations = {
   en: {
     navResearch: "Research", navPublications: "Publications", navExperience: "Experience", navService: "Service", navContact: "Contact",
     heroName: "Zihan Ye", heroRole: "AI Researcher at UCAS", heroTitleLead: "Trustworthy", heroTitleFocus: "Zero-Shot Learning",
-    heroIntro: "I build learning systems that can recognize the unseen — and do so with evidence, efficiency, and resilience.",
+    heroIntro: "I am currently an Assistant Researcher at the University of Chinese Academy of Sciences (UCAS), working with Prof. <a href=\"https://scholar.google.com/citations?user=z84rLjoAAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">Ling Shao</a>. I received my Ph.D. degree from the Premi Lab of the University of Liverpool in 2025, under the supervision of Prof. <a href=\"https://scholar.google.com/citations?user=3l5B0joAAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">Kaizhu Huang</a>. During my undergraduate studies, I worked under the guidance of Prof. <a href=\"https://scholar.google.com/citations?user=n3VIi58AAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">Fuyuan Hu</a>. My research centers on <strong>trustworthy zero-shot learning</strong>, with a particular focus on <strong>interpretable zero-shot learning</strong>, <strong>efficient zero-shot learning</strong>, and <strong>robust zero-shot learning</strong>. I aim to develop learning systems that can recognize unseen concepts in a transparent, data-efficient, and dependable manner.",
     exploreResearch: "Explore my research",
     researchLabel: "Research agenda", researchHeading: "Generalization is only useful when we can trust it.",
     researchBody: "Zero-shot learning connects visual evidence with semantic knowledge to recognize classes never seen during training. My research asks a harder question: how can that transfer remain understandable, data-efficient, and dependable beyond ideal benchmarks?",
@@ -32,7 +32,7 @@ const translations = {
   zh: {
     navResearch: "研究", navPublications: "论文", navExperience: "经历", navService: "服务", navContact: "联系",
     heroName: "Zihan Ye", heroRole: "中国科学院大学人工智能研究者", heroTitleLead: "可信赖的", heroTitleFocus: "零样本学习",
-    heroIntro: "我致力于构建能够识别未知类别，并兼具证据可解释性、数据效率与环境适应力的学习系统。",
+    heroIntro: "我现任中国科学院大学助理研究员，与<a href=\"https://scholar.google.com/citations?user=z84rLjoAAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">邵岭教授</a>合作开展研究。2025 年于利物浦大学 Premi Lab 获得博士学位，师从<a href=\"https://scholar.google.com/citations?user=3l5B0joAAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">黄开竹教授</a>。本科期间，我曾在<a href=\"https://scholar.google.com/citations?user=n3VIi58AAAAJ&amp;hl=en\" target=\"_blank\" rel=\"noopener\">胡伏原教授</a>指导下开展研究。我的研究聚焦于<strong>可信赖的零样本学习</strong>，重点包括<strong>可解释零样本学习</strong>、<strong>高效零样本学习</strong>和<strong>鲁棒零样本学习</strong>，致力于构建能够以透明、数据高效且可靠的方式识别未知概念的学习系统。",
     exploreResearch: "了解研究方向",
     researchLabel: "研究主线", researchHeading: "只有值得信赖，泛化才真正有用。",
     researchBody: "零样本学习通过连接视觉证据与语义知识，识别训练阶段从未出现的类别。我的研究进一步追问：在理想基准之外，如何让这种知识迁移依然可理解、数据高效且稳定可靠？",
@@ -88,6 +88,10 @@ function setLanguage(nextLanguage) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     if (translations[language][key]) element.textContent = translations[language][key];
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+    const key = element.dataset.i18nHtml;
+    if (translations[language][key]) element.innerHTML = translations[language][key];
   });
   languageToggle.textContent = language === "en" ? "中文" : "EN";
   languageToggle.setAttribute("aria-label", language === "en" ? "切换为中文" : "Switch to English");
