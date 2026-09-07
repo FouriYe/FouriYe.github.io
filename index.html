@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zihan Ye is an AI researcher working on trustworthy zero-shot learning, including interpretable, efficient, and robust zero-shot learning.">
+  <meta name="theme-color" content="#f2efe7">
+  <title>Zihan Ye — Trustworthy Zero-Shot Learning</title>
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Zihan Ye",
+    "jobTitle": "Assistant Researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "University of Chinese Academy of Sciences"
+    },
+    "email": "mailto:zihhye@outlook.com",
+    "url": "https://scholar.google.com/citations?user=mIw908MAAAAJ",
+    "sameAs": ["https://scholar.google.com/citations?user=mIw908MAAAAJ"],
+    "knowsAbout": [
+      "Trustworthy Zero-Shot Learning",
+      "Interpretable Zero-Shot Learning",
+      "Efficient Zero-Shot Learning",
+      "Robust Zero-Shot Learning"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <a class="wordmark" href="#top" aria-label="Zihan Ye, home">
+      <span>ZY</span>
+      <span class="wordmark-dot" aria-hidden="true"></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#research" data-i18n="navResearch">Research</a>
+      <a href="#publications" data-i18n="navPublications">Publications</a>
+      <a href="#experience" data-i18n="navExperience">Experience</a>
+      <a href="#service" data-i18n="navService">Service</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" type="button" data-theme-toggle aria-label="Switch color theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.1A8.7 8.7 0 0 1 9.9 3.5 8.7 8.7 0 1 0 20.5 14.1Z"></path></svg>
+      </button>
+      <button class="language-button" type="button" data-language-toggle aria-label="切换为中文">中文</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow reveal" data-i18n="heroEyebrow">Zihan Ye · AI Researcher at UCAS</p>
+        <h1 class="reveal reveal-delay-1">
+          <span data-i18n="heroTitleLead">Trustworthy</span>
+          <em data-i18n="heroTitleFocus">Zero-Shot Learning</em>
+        </h1>
+        <p class="hero-intro reveal reveal-delay-2" data-i18n="heroIntro">I build learning systems that can recognize the unseen — and do so with evidence, efficiency, and resilience.</p>
+
+        <div class="hero-actions reveal reveal-delay-3">
+          <a class="button button-primary" href="#research">
+            <span data-i18n="exploreResearch">Explore my research</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-2" aria-hidden="true">
+        <div class="visual-grid"></div>
+        <svg class="research-map" viewBox="0 0 580 580">
+          <defs>
+            <linearGradient id="beam" x1="0" x2="1">
+              <stop offset="0" stop-color="var(--accent)" stop-opacity=".12"></stop>
+              <stop offset=".5" stop-color="var(--accent)" stop-opacity=".72"></stop>
+              <stop offset="1" stop-color="var(--accent-warm)" stop-opacity=".18"></stop>
+            </linearGradient>
+          </defs>
+          <circle class="orbit orbit-a" cx="290" cy="290" r="210"></circle>
+          <circle class="orbit orbit-b" cx="290" cy="290" r="145"></circle>
+          <path class="transfer-line" d="M115 290H465"></path>
+          <path class="transfer-beam" d="M174 263H406L446 290 406 317H174Z"></path>
+          <circle class="node node-seen" cx="155" cy="290" r="56"></circle>
+          <circle class="node node-unseen" cx="425" cy="290" r="56"></circle>
+          <circle class="pulse pulse-a" cx="290" cy="80" r="7"></circle>
+          <circle class="pulse pulse-b" cx="165" cy="408" r="7"></circle>
+          <circle class="pulse pulse-c" cx="418" cy="405" r="7"></circle>
+          <text class="map-label" x="155" y="285" text-anchor="middle">SEEN</text>
+          <text class="map-sub" x="155" y="306" text-anchor="middle">knowledge</text>
+          <text class="map-label" x="425" y="285" text-anchor="middle">UNSEEN</text>
+          <text class="map-sub" x="425" y="306" text-anchor="middle">classes</text>
+          <text class="map-center" x="290" y="282" text-anchor="middle">TRUSTWORTHY</text>
+          <text class="map-center" x="290" y="302" text-anchor="middle">TRANSFER</text>
+          <text class="axis-label axis-interpretable" x="290" y="52" text-anchor="middle">INTERPRETABLE</text>
+          <text class="axis-label axis-efficient" x="126" y="443" text-anchor="middle">EFFICIENT</text>
+          <text class="axis-label axis-robust" x="456" y="443" text-anchor="middle">ROBUST</text>
+        </svg>
+        <span class="visual-index">01 — 03</span>
+      </div>
+    </section>
+
+    <section class="section thesis" id="research">
+      <div class="section-label reveal">
+        <span>01</span>
+        <p data-i18n="researchLabel">Research agenda</p>
+      </div>
+      <div class="section-intro reveal">
+        <h2 data-i18n="researchHeading">Generalization is only useful when we can trust it.</h2>
+        <p data-i18n="researchBody">Zero-shot learning connects visual evidence with semantic knowledge to recognize classes never seen during training. My research asks a harder question: how can that transfer remain understandable, data-efficient, and dependable beyond ideal benchmarks?</p>
+      </div>
+
+      <div class="research-pillars">
+        <article class="pillar pillar-interpret reveal">
+          <div class="pillar-top"><span>01</span><span class="pillar-mark">I</span></div>
+          <h3 data-i18n="interpretTitle">Interpretable ZSL</h3>
+          <p data-i18n="interpretBody">Make zero-shot decisions easier to understand and control through meaningful uncertainty signals and targeted machine unlearning.</p>
+          <ul>
+            <li data-i18n="interpretTag1">Machine unlearning</li>
+            <li data-i18n="interpretTag2">Uncertainty awareness</li>
+          </ul>
+        </article>
+
+        <article class="pillar pillar-efficient reveal reveal-delay-1">
+          <div class="pillar-top"><span>02</span><span class="pillar-mark">E</span></div>
+          <h3 data-i18n="efficientTitle">Efficient ZSL</h3>
+          <p data-i18n="efficientBody">Learn reliable visual-semantic correlations from limited seen-class data, reducing annotation and training demands while preserving transfer quality.</p>
+          <ul>
+            <li data-i18n="efficientTag1">Data-efficient learning</li>
+            <li data-i18n="efficientTag2">Test-time adaptation</li>
+          </ul>
+        </article>
+
+        <article class="pillar pillar-robust reveal reveal-delay-2">
+          <div class="pillar-top"><span>03</span><span class="pillar-mark">R</span></div>
+          <h3 data-i18n="robustTitle">Robust ZSL</h3>
+          <p data-i18n="robustBody">Preserve performance under imperfect data, distribution shifts, imbalanced predictions, and test-time changes encountered in the real world.</p>
+          <ul>
+            <li data-i18n="robustTag1">Adversarial robustness</li>
+            <li data-i18n="robustTag2">Class &amp; concept vulnerabilities</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section featured-work">
+      <div class="section-label reveal">
+        <span>02</span>
+        <p data-i18n="featuredLabel">Featured research</p>
+      </div>
+      <div class="featured-grid">
+        <article class="feature reveal">
+          <div class="feature-meta"><span>ICML · 2026</span><span class="topic-interpretable" data-i18n="interpretBadge">Interpretable ZSL</span></div>
+          <h2>Segment Anything</h2>
+          <h3>Segment Anything with Robust Uncertainty-Accuracy Correlation</h3>
+          <p class="author-role" data-i18n="correspondingAuthor">✉ Corresponding author</p>
+          <p data-i18n="segmentBody">Establishing a robust relationship between uncertainty and accuracy so zero-shot segmentation predictions are easier to interpret and assess.</p>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mIw908MAAAAJ&citation_for_view=mIw908MAAAAJ:9ZlFYXVOiuMC" target="_blank" rel="noopener"><span data-i18n="viewOnScholar">View on Scholar</span><span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="feature reveal reveal-delay-1">
+          <div class="feature-meta"><span>TPAMI · 2026</span><span class="topic-efficient" data-i18n="efficientBadge">Efficient ZSL</span></div>
+          <h2>ZeroDiff++</h2>
+          <h3>Generative Test-Time Adaptation for Zero-Shot Learning</h3>
+          <p data-i18n="zeroDiffPlusBody">Adapting generative zero-shot models at test time to meet the unknown, changing conditions in which unseen classes actually appear.</p>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mIw908MAAAAJ&citation_for_view=mIw908MAAAAJ:L8Ckcad2t8MC" target="_blank" rel="noopener"><span data-i18n="viewOnScholar">View on Scholar</span><span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="feature reveal reveal-delay-2">
+          <div class="feature-meta"><span>TIP · 2026</span><span class="topic-robust" data-i18n="robustBadge">Robust ZSL</span></div>
+          <h2 data-i18n="adversarialShort">Adversarial Robustness</h2>
+          <h3>Adversarial Robustness in Zero-Shot Learning: An Empirical Study on Class and Concept-Level Vulnerabilities</h3>
+          <p data-i18n="adversarialBody">An empirical study of adversarial vulnerabilities at both class and concept levels, clarifying where zero-shot systems fail under attack.</p>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:dhFuZR0502QC" target="_blank" rel="noopener"><span data-i18n="viewOnScholar">View on Scholar</span><span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section publications" id="publications">
+      <div class="section-label reveal">
+        <span>03</span>
+        <p data-i18n="publicationsLabel">Publications</p>
+      </div>
+      <div class="publications-heading reveal">
+        <h2 data-i18n="publicationsHeading">A complete record across zero-shot learning and trustworthy AI.</h2>
+        <a class="text-link" href="https://scholar.google.com/citations?user=mIw908MAAAAJ&hl=en" target="_blank" rel="noopener"><span data-i18n="allPublications">All publications on Scholar</span><span>↗</span></a>
+      </div>
+
+      <div class="publication-list reveal">
+        <article class="publication-item">
+          <time datetime="2026">2026</time>
+          <div><span class="venue">CVPRW</span><h3>Low-Effort Jailbreak Attacks Against Text-to-Image Safety Filters</h3><p>A. B. Mustafa, <strong>Z. Ye</strong>, Y. Lu, M. P. Pound, S. N. Gowda</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:4DMP91E08xMC" target="_blank" rel="noopener" aria-label="View Low-Effort Jailbreak Attacks on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2026">2026</time>
+          <div><span class="venue">TPAMI</span><span class="paper-topic topic-efficient" data-i18n="efficientBadge">Efficient ZSL</span><h3>ZeroDiff++: Generative Test-Time Adaptation for Zero-Shot Learning</h3><p><strong>Z. Ye</strong>, S. N. Gowda, K. Du, W. Luo, L. Shao</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:L8Ckcad2t8MC" target="_blank" rel="noopener" aria-label="View ZeroDiff++ on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2026">2026</time>
+          <div><span class="venue">Neurocomputing</span><h3>A Negative-Anchored Self-Relabeling Strategy for Multi-Label Class-Incremental Learning</h3><p>K. Du, J. Xie, F. Lyu, Y. Zhou, <strong>Z. Ye</strong>, G. Liu</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:QIV2ME_5wuYC" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2026">2026</time>
+          <div><span class="venue">ICML</span><span class="paper-topic topic-interpretable" data-i18n="interpretBadge">Interpretable ZSL</span><h3>Segment Anything with Robust Uncertainty-Accuracy Correlation</h3><p>H. Zhou, M. Toussaint, L. Shao, <strong>Z. Ye</strong><span class="corresponding-inline" data-i18n="correspondingAuthor">✉ Corresponding author</span></p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:9ZlFYXVOiuMC" target="_blank" rel="noopener" aria-label="View Segment Anything paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2026">2026</time>
+          <div><span class="venue">arXiv</span><h3>Compression as an Adversarial Amplifier Through Decision Space Reduction</h3><p>L. Evans, H. Jandu, <strong>Z. Ye</strong>, Y. Lu, S. N. Gowda</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:mVmsd5A6BfQC" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2026">2026</time>
+          <div><span class="venue">PR</span><h3>Negative-Weighted Knowledge Distillation Regularized Graph Convolutional Network for Multi-Label Class-Incremental Learning</h3><p>K. Du, J. Xie, F. Lyu, Y. Zhou, <strong>Z. Ye</strong>, W. Li, Y. Li, G. Liu</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:Wp0gIr-vW9MC" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2026">2026</time>
+          <div><span class="venue">TIP</span><span class="paper-topic topic-robust" data-i18n="robustBadge">Robust ZSL</span><h3>Adversarial Robustness in Zero-Shot Learning: An Empirical Study on Class and Concept-Level Vulnerabilities</h3><p><strong>Z. Ye</strong>, Z. Peng, S. N. Gowda, Y. Yan, H. Xu, L. Shao</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:dhFuZR0502QC" target="_blank" rel="noopener" aria-label="View Adversarial Robustness in Zero-Shot Learning on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2025">2025</time>
+          <div><span class="venue">ICLR</span><span class="paper-topic topic-efficient" data-i18n="efficientBadge">Efficient ZSL</span><h3>ZeroDiff: Solidified Visual-Semantic Correlation in Zero-Shot Learning</h3><p><strong>Z. Ye</strong>, S. N. Gowda, X. Huang, H. Xu, Y. Jin, K. Huang, X. Jin</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:3fE2CSJIrl8C" target="_blank" rel="noopener" aria-label="View ZeroDiff on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2025">2025</time>
+          <div><span class="venue">arXiv</span><h3>Anyone Can Jailbreak: Prompt-Based Attacks on LLMs and T2Is</h3><p>A. B. Mustafa, <strong>Z. Ye</strong>, Y. Lu, M. P. Pound, S. N. Gowda</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:KlAtU1dfN6UC" target="_blank" rel="noopener" aria-label="View Anyone Can Jailbreak on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2025">2025</time>
+          <div><span class="venue">arXiv</span><h3>Zero-Shot Robotic Manipulation with Language-Guided Instruction and Formal Task Planning</h3><p>J. Tang, <strong>Z. Ye</strong>, Y. Yan, Z. Zheng, T. Gao, Y. Jin</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:MXK_kJrjxJIC" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2025">2025</time>
+          <div><span class="venue">arXiv</span><h3>Think Small, Plan Smart: Minimalist Symbolic Abstraction and Heuristic Subspace Search for LLM-Guided Task Planning</h3><p>J. Tang, Y. Yan, <strong>Z. Ye</strong>, Z. Zheng, Y. Jin</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:M3ejUd6NZC8C" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2025">2025</time>
+          <div><span class="venue">arXiv</span><h3>DeCLIP: Decoupled Prompting for CLIP-Based Multi-Label Class-Incremental Learning</h3><p>K. Du, <strong>Z. Ye</strong>, J. Xie, Y. Shen, Y. Li, F. Hu, L. Shao, G. Liu, J. van de Weijer, et al.</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:7PzlFSSx8tAC" target="_blank" rel="noopener" aria-label="View DeCLIP on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2024">2024</time>
+          <div><span class="venue">BMVC</span><h3>Effective Message Hiding with Order-Preserving Mechanisms</h3><p>Y. Gao, X. Qiu, <strong>Z. Ye</strong></p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:hqOjcs7Dif8C" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2023">2023</time>
+          <div><span class="venue">TIP</span><span class="paper-topic topic-robust" data-i18n="robustBadge">Robust ZSL</span><h3>Rebalanced Zero-Shot Learning</h3><p><strong>Z. Ye</strong>, G. Yang, X. Jin, Y. Liu, K. Huang</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:eQOLeE2rZwMC" target="_blank" rel="noopener" aria-label="View Rebalanced Zero-Shot Learning on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2023">2023</time>
+          <div><span class="venue">PR</span><h3>Semantic Similarity Distance: Towards Better Text-Image Consistency Metric in Text-to-Image Generation</h3><p>Z. Tan, X. Yang, <strong>Z. Ye</strong>, Q. Wang, Y. Yan, A. Nguyen, K. Huang</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:roLk4NBRz8UC" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2022">2022</time>
+          <div><span class="venue">ACI</span><h3>A Comprehensive Survey of Zero-Shot Image Classification: Methods, Implementation, and Fair Evaluation</h3><p>G. Yang, <strong>Z. Ye</strong>, R. Zhang, K. Huang</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:Y0pCki6q_DkC" target="_blank" rel="noopener" aria-label="View zero-shot image classification survey on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2021">2021</time>
+          <div><span class="venue">TMM</span><span class="paper-topic topic-interpretable" data-i18n="interpretBadge">Interpretable ZSL</span><h3>Disentangling Semantic-to-Visual Confusion for Zero-Shot Learning</h3><p><strong>Z. Ye</strong>, F. Hu, F. Lyu, L. Li, K. Huang</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:zYLM7Y9cAGgC" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2021">2021</time>
+          <div><span class="venue">AAAI</span><h3>Multi-Domain Multi-Task Rehearsal for Lifelong Learning</h3><p>F. Lyu, S. Wang, W. Feng, <strong>Z. Ye</strong>, F. Hu, S. Wang</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:IjCSPb-OGe4C" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2020">2020</time>
+          <div><span class="venue">ICIP · Oral</span><h3>Associating Multi-Scale Receptive Fields for Fine-Grained Recognition</h3><p><strong>Z. Ye</strong>, F. Hu, Y. Liu, Z. Xia, F. Lyu, P. Liu</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2019">2019</time>
+          <div><span class="venue">ICME · Oral</span><span class="paper-topic topic-interpretable" data-i18n="interpretBadge">Interpretable ZSL</span><h3>SR-GAN: Semantic Rectifying Generative Adversarial Network for Zero-Shot Learning</h3><p><strong>Z. Ye</strong>, F. Lyu, L. Li, Q. Fu, J. Ren, F. Hu</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:d1gkVwhDpl0C" target="_blank" rel="noopener" aria-label="View SR-GAN on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2019">2019</time>
+          <div><span class="venue">Cognitive Computation</span><h3>Unsupervised Object Transfiguration with Attention</h3><p><strong>Z. Ye</strong>, F. Lyu, L. Li, Y. Sun, Q. Fu, F. Hu</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:u-x6o8ySG0sC" target="_blank" rel="noopener" aria-label="View paper on Google Scholar">↗</a>
+        </article>
+        <article class="publication-item">
+          <time datetime="2018">2018</time>
+          <div><span class="venue">BICS · Best Poster</span><h3>DAU-GAN: Unsupervised Object Transfiguration via Deep Attention Unit</h3><p><strong>Z. Ye</strong>, F. Lyu, J. Ren, Y. Sun, Q. Fu, F. Hu</p></div>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=mIw908MAAAAJ&amp;pagesize=100&amp;citation_for_view=mIw908MAAAAJ:u5HHmVD_uO8C" target="_blank" rel="noopener" aria-label="View DAU-GAN on Google Scholar">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section journey" id="experience">
+      <div class="section-label reveal">
+        <span>04</span>
+        <p data-i18n="journeyLabel">Academic journey</p>
+      </div>
+      <div class="journey-layout">
+        <div class="journey-heading reveal">
+          <h2 data-i18n="journeyHeading">From representation learning to reliable generalization.</h2>
+          <p data-i18n="journeyBody">My work connects academic theory with the constraints of real-world AI systems.</p>
+        </div>
+        <div class="timeline reveal reveal-delay-1">
+          <article>
+            <span class="timeline-year">2025 — <span data-i18n="present">Present</span></span>
+            <h3 data-i18n="ucasRole">Assistant Researcher</h3>
+            <p data-i18n="ucasName">University of Chinese Academy of Sciences (UCAS)</p>
+            <small data-i18n="ucasAdvisor">Advisor: Prof. Ling Shao</small>
+          </article>
+          <article>
+            <span class="timeline-year">2024 — 2025</span>
+            <h3 data-i18n="westlakeRole">Visiting PhD · TGAI Lab</h3>
+            <p data-i18n="westlakeName">Westlake University</p>
+            <small data-i18n="westlakeAdvisor">Supervisor: Prof. Yaochu Jin</small>
+          </article>
+          <article>
+            <span class="timeline-year">2023 — 2024</span>
+            <h3 data-i18n="boschRole">Strategic Intern · Computer Vision</h3>
+            <p data-i18n="boschName">Bosch Corporate Research, Shanghai</p>
+          </article>
+          <article>
+            <span class="timeline-year">2022 — 2025</span>
+            <h3 data-i18n="phdRole">PhD · Computer Science & Engineering</h3>
+            <p data-i18n="phdName">Xi’an Jiaotong-Liverpool University / University of Liverpool</p>
+            <small data-i18n="phdAdvisor">Advisor: Prof. Kaizhu Huang</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service" id="service">
+      <div class="section-label reveal">
+        <span>05</span>
+        <p data-i18n="serviceLabel">Service &amp; funding</p>
+      </div>
+      <div class="service-layout">
+        <div class="service-heading reveal">
+          <h2 data-i18n="serviceHeading">Supporting research and serving its community.</h2>
+          <p data-i18n="serviceBody">Leading funded research while contributing to peer review and community organization in machine learning and computer vision.</p>
+          <div class="service-award">
+            <span class="service-award-mark" aria-hidden="true">★</span>
+            <div>
+              <small data-i18n="reviewRecognition">Review recognition</small>
+              <strong>NeurIPS 2025</strong>
+              <p data-i18n="topReviewerAward">Top Reviewer Award</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-groups reveal reveal-delay-1">
+          <article class="funding-card">
+            <div class="funding-card-top">
+              <span data-i18n="selectedFunding">Selected funding</span>
+              <time>2027–2029</time>
+            </div>
+            <h3 data-i18n="fundingProject">Traceable Faithful Zero-Shot Learning</h3>
+            <p data-i18n="fundingAgency">National Natural Science Foundation of China (NSFC) · Young Scientists Fund</p>
+            <dl>
+              <div><dt data-i18n="fundingRole">Role</dt><dd data-i18n="principalInvestigator">Principal Investigator</dd></div>
+              <div><dt data-i18n="fundingBudget">Budget</dt><dd data-i18n="fundingAmount">CNY 300,000</dd></div>
+              <div><dt data-i18n="fundingPeriod">Project period</dt><dd>2027–2029</dd></div>
+            </dl>
+          </article>
+
+          <article class="service-group">
+            <div class="service-group-title">
+              <span>01</span>
+              <h3 data-i18n="organization">Organization</h3>
+            </div>
+            <ul>
+              <li>
+                <div><strong>GreenMM Workshop · ACM MM</strong><small data-i18n="organizer">Organizer</small></div>
+                <time datetime="2026">2026</time>
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-group">
+            <div class="service-group-title">
+              <span>02</span>
+              <h3 data-i18n="peerReview">Peer review</h3>
+            </div>
+            <ul>
+              <li><div><strong>IEEE Transactions on Multimedia (TMM)</strong><small data-i18n="journalReviewer">Journal Reviewer</small></div><time datetime="2026">2026</time></li>
+              <li><div><strong>AAAI Conference on Artificial Intelligence</strong><small data-i18n="programCommitteeReviewer">Conference Program Committee (Reviewer)</small></div><time>2025–2027</time></li>
+              <li><div><strong>ICLR</strong><small data-i18n="conferenceReviewer">Conference Reviewer</small></div><time>2026–2027</time></li>
+              <li><div><strong>CVPR</strong><small data-i18n="conferenceReviewer">Conference Reviewer</small></div><time>2024–2026</time></li>
+              <li><div><strong>ECCV · ACCV</strong><small data-i18n="conferenceReviewer">Conference Reviewer</small></div><time datetime="2026">2026</time></li>
+              <li><div><strong>NeurIPS</strong><small data-i18n="conferenceReviewer">Conference Reviewer</small></div><time>2024–2025</time></li>
+              <li><div><strong>ICCV · ICML · AISTATS</strong><small data-i18n="conferenceReviewer">Conference Reviewer</small></div><time datetime="2025">2025</time></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow" data-i18n="contactEyebrow">Research · Collaboration · Ideas</p>
+        <h2 data-i18n="contactHeading">Let’s make learning beyond known classes more trustworthy.</h2>
+      </div>
+      <div class="contact-links reveal reveal-delay-1">
+        <a href="mailto:zihhye@outlook.com"><span data-i18n="emailMe">Email me</span><strong>zihhye@outlook.com</strong></a>
+        <a href="https://scholar.google.com/citations?user=mIw908MAAAAJ&hl=en" target="_blank" rel="noopener"><span>Google Scholar</span><strong data-i18n="browseWork">Browse all work ↗</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span data-current-year>2026</span> Zihan Ye</p>
+    <p data-i18n="footerNote">Trustworthy intelligence, one unseen class at a time.</p>
+    <a href="#top" data-i18n="backToTop">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
