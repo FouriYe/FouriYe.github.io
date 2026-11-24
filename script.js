@@ -25,6 +25,7 @@ const translations = {
     phdRole: "PhD · Computer Science & Engineering", phdName: "Xi’an Jiaotong-Liverpool University / University of Liverpool", phdAdvisor: "Advisor: Prof. Kaizhu Huang",
     serviceLabel: "Service & funding", serviceHeading: "Supporting research and serving its community.", serviceBody: "Leading funded research while contributing to peer review and community organization in machine learning and computer vision.",
     selectedFunding: "Selected funding", fundingProject: "Traceable Faithful Zero-Shot Learning", fundingAgency: "National Natural Science Foundation of China (NSFC) · Young Scientists Fund", fundingRole: "Role", principalInvestigator: "Principal Investigator", fundingBudget: "Budget", fundingAmount: "CNY 300,000", fundingPeriod: "Project period",
+    postdocProject: "Research on Data-Efficient Zero-Shot Learning Methods", postdocAgency: "China Postdoctoral Science Foundation (CPSF) · General Program", postdocAmount: "CNY 80,000",
     reviewRecognition: "Review recognition", topReviewerAward: "Top Reviewer Award · Award rate: 8.02%", organization: "Organization", organizer: "Organizer", peerReview: "Peer review", journalReviewer: "Journal Reviewer", conferenceReviewer: "Conference Reviewer", programCommitteeReviewer: "Conference Program Committee (Reviewer)",
     contactEyebrow: "Research · Collaboration · Ideas", contactHeading: "Let’s make learning beyond known classes more trustworthy.", emailMe: "Email me", browseWork: "Browse all work ↗",
     footerNote: "Trustworthy intelligence, one unseen class at a time.", backToTop: "Back to top ↑"
@@ -55,6 +56,7 @@ const translations = {
     phdRole: "博士 · 计算机科学与工程", phdName: "西交利物浦大学 / 利物浦大学", phdAdvisor: "导师：黄开竹教授",
     serviceLabel: "学术服务与基金", serviceHeading: "主持研究，也服务于研究共同体。", serviceBody: "主持基金项目，同时参与机器学习与计算机视觉领域的同行评审及学术活动组织工作。",
     selectedFunding: "科研基金", fundingProject: "可追溯的忠实零样本学习研究", fundingAgency: "国家自然科学基金委员会 · 青年科学基金项目", fundingRole: "角色", principalInvestigator: "主持人", fundingBudget: "经费", fundingAmount: "人民币 30 万元", fundingPeriod: "执行期",
+    postdocProject: "数据高效的零样本学习方法研究", postdocAgency: "中国博士后科学基金 · 面上资助", postdocAmount: "人民币 8 万元",
     reviewRecognition: "评审荣誉", topReviewerAward: "杰出审稿人奖 · 获奖率 8.02%", organization: "组织工作", organizer: "组织者", peerReview: "同行评审", journalReviewer: "期刊审稿人", conferenceReviewer: "会议审稿人", programCommitteeReviewer: "会议程序委员会（审稿人）",
     contactEyebrow: "研究 · 合作 · 想法", contactHeading: "让超越已知类别的学习更加可信。", emailMe: "邮件联系", browseWork: "浏览全部研究 ↗",
     footerNote: "从每一个未知类别开始，构建可信智能。", backToTop: "返回顶部 ↑"

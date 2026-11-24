@@ -230,10 +230,10 @@ html[data-theme="dark"] .moon-icon { display: block; }
 .pulse-b { fill: var(--topic-e); animation-delay: -.8s; }
 .pulse-c { fill: var(--topic-r); animation-delay: -1.6s; }
 .map-label, .map-center, .axis-label { fill: var(--ink); font-family: var(--sans); font-weight: 800; letter-spacing: .09em; }
-.map-label { font-size: 12px; }
-.map-sub { fill: var(--ink-soft); font-family: var(--serif); font-size: 11px; font-style: italic; }
-.map-center { fill: var(--accent-strong); font-size: 9px; letter-spacing: .13em; }
-.axis-label { font-size: 10px; }
+.map-label { font-size: 20px; }
+.map-sub { fill: var(--ink-soft); font-family: var(--serif); font-size: 17px; font-style: italic; }
+.map-center { fill: var(--accent-strong); font-size: 12px; letter-spacing: .13em; }
+.axis-label { font-size: 18px; }
 .axis-interpretable { fill: var(--topic-i); }
 .axis-efficient { fill: var(--topic-e); }
 .axis-robust { fill: var(--topic-r); }
@@ -392,6 +392,10 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
   .hero-actions { display: grid; }
   .button { width: 100%; }
   .hero-visual { aspect-ratio: .94; }
+  .map-label { font-size: 22px; }
+  .map-sub { font-size: 20px; }
+  .map-center { font-size: 14px; }
+  .axis-label { font-size: 22px; }
   .section { padding: 84px 0; }
   .hero-name { font-size: clamp(44px, 13vw, 60px); }
   .hero-role { font-size: 16px; letter-spacing: .055em; }
